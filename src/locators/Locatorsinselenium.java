@@ -15,34 +15,16 @@ class Locatorsinselenium {
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		driver= new ChromeDriver();
-		driver.manage().window().maximize();
-		
-	}
-		
+		driver.manage().window().maximize();		
+	}		
 
 	@Test
 	void idnameclassname() throws Exception {
-		driver.get("https://gktbooks.com/");
-		Thread.sleep(2000);
+		driver.get("https://gktbooks.com/");	
 		driver.findElement(By.linkText("My Account")).click();
 		driver.findElement(By.name("username")).sendKeys("e.srinivaspradeep@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("Zxcv1234!");
-		driver.findElement(By.xpath("//*[@id=\"customer_login\"]/div[1]/form/p[4]/a")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"user_login\"]")).sendKeys("e.srinivaspradeep@gmail.com");
-	//	driver.findElement(By.xpath("//*[@id=\"recaptcha-anchor\"]/div[1]")).click();
-		Thread.sleep(2000);
-	//	driver.findElement(By.xpath("//*[@id=\"post-29\"]/div/form/p[3]/button")).click();
-		Thread.sleep(2000);
-		
+		driver.findElement(By.xpath("//*[@id=\"customer_login\"]/div[1]/form/p[4]/a")).click();	
+		driver.findElement(By.xpath("//*[@id=\"user_login\"]")).sendKeys("e.srinivaspradeep@gmail.com");		
 	}
-	/*	
-	@Test
-	void xpathforclick() throws Exception 
-	{
-		driver.get("http://techlearn.in");
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"mega-menu-item-12\"]/a")).click();
-	}*/
-
 }

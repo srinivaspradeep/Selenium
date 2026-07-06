@@ -20,7 +20,7 @@ class Locatorsinselenium {
 
 	@Test
 	void idnameclassname() throws Exception {
-		driver.get("https://gktbooks.com/");	
+		driver.get("https://www.gktbooks.com/");	
 		driver.findElement(By.linkText("My Account")).click();
 		driver.findElement(By.name("username")).sendKeys("e.srinivaspradeep@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("Zxcv1234!");

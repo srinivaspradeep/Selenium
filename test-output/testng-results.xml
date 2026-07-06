@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-02T10:51:58 IST" name="Default suite" finished-at="2026-07-02T10:52:17 IST" duration-ms="18565">
+  <suite started-at="2026-07-06T16:37:44 IST" name="Default suite" finished-at="2026-07-06T16:37:52 IST" duration-ms="8015">
     <groups>
     </groups>
-    <test started-at="2026-07-02T10:51:58 IST" name="Default test" finished-at="2026-07-02T10:52:17 IST" duration-ms="18565">
-      <class name="actionsinwebpages.actionclass">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:actionsinwebpages.actionclass@1ff4931d]" started-at="2026-07-02T10:51:58 IST" name="beforeTest" finished-at="2026-07-02T10:52:01 IST" duration-ms="2511" status="PASS">
+    <test started-at="2026-07-06T16:37:44 IST" name="Default test" finished-at="2026-07-06T16:37:52 IST" duration-ms="8015">
+      <class name="pagescroll.TestDemo">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pagescroll.TestDemo@2925bf5b]" started-at="2026-07-06T16:37:44 IST" name="beforeTest" finished-at="2026-07-06T16:37:51 IST" duration-ms="6510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="mousehovers()[pri:0, instance:actionsinwebpages.actionclass@1ff4931d]" started-at="2026-07-02T10:52:01 IST" name="mousehovers" finished-at="2026-07-02T10:52:17 IST" duration-ms="15935" status="PASS">
+        <test-method signature="facebook()[pri:0, instance:pagescroll.TestDemo@2925bf5b]" started-at="2026-07-06T16:37:51 IST" name="facebook" finished-at="2026-07-06T16:37:52 IST" duration-ms="1413" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mousehovers -->
-      </class> <!-- actionsinwebpages.actionclass -->
+        </test-method> <!-- facebook -->
+      </class> <!-- pagescroll.TestDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

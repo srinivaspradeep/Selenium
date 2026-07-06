@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -19,7 +20,7 @@ public class iframesmethods {
 	  driver.switchTo().frame(frame2);
 	  driver.findElement(By.xpath("//a[normalize-space()='seleniumbase.io/w3schools/iframes']")).click();
 	 // driver.switchTo().parentFrame();
-	  Thread.sleep(2000);
+	  Thread.sleep(5000);
 	  driver.switchTo().defaultContent();
 	  driver.findElement(By.xpath("//a[@id='menuButton']")).click();
 	  
@@ -41,7 +42,7 @@ public class iframesmethods {
 	 driver.findElement(By.xpath("//a[normalize-space()='seleniumbase.io/w3schools/iframes']")).click();
 	  
 	 driver.switchTo().defaultContent();
-	 Thread.sleep(4000);
+	 
 
 	 driver.findElement(By.xpath("//button[@id='runbuttn']")).click();
 	  
@@ -49,7 +50,7 @@ public class iframesmethods {
   }
   @BeforeTest
   public void beforeTest() {
-	  driver=new ChromeDriver();
+	  driver=new FirefoxDriver();
 	  driver.manage().window().maximize();
   }
 

@@ -20,7 +20,7 @@ public class iframesmethods {
 	  driver.switchTo().frame(frame2);
 	  driver.findElement(By.xpath("//a[normalize-space()='seleniumbase.io/w3schools/iframes']")).click();
 	 // driver.switchTo().parentFrame();
-	  Thread.sleep(5000);
+	  Thread.sleep(3000);
 	  driver.switchTo().defaultContent();
 	  driver.findElement(By.xpath("//a[@id='menuButton']")).click();
 	  

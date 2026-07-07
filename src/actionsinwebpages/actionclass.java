@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class actionclass {
 	WebDriver driver;
 	
-  @Test
+  @Test(priority=0)
   public void mousehovers() throws Exception{
 	  driver.get("https://www.flipkart.com/");
 	  driver.findElement(By.xpath("/html/body/div[5]/div/span")).click();	 
@@ -23,7 +23,7 @@ public class actionclass {
 	 driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div/div/div/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div/div/header/div[2]/div[2]/div/div/div/ul/a[10]/li/div/div/div")).click();
 	  
   }
-  @Test
+  @Test(priority=1)
   public void keyboardenterrightclick() throws Exception{
 	  driver.get("https://www.flipkart.com/");
 	  Thread.sleep(3000);

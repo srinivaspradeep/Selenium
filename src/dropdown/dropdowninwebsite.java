@@ -10,8 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class dropdowninwebsite {
-	WebDriver driver;
-	
+	WebDriver driver;	
 	
   @Test
   public void dropdown() throws Exception{

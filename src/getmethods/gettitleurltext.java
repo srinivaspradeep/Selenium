@@ -14,7 +14,7 @@ public class gettitleurltext {
 	WebDriver driver;
 	
   @Test
-  public void gettitle() throws Exception {
+  public void getTitle() throws Exception {
 	  
 	  driver.get("https://www.youtube.com/");
 	  Thread.sleep(2000);
@@ -26,7 +26,7 @@ public class gettitleurltext {
   }
   
   @Test
-  public void gettext() throws Exception {
+  public void getText() throws Exception {
 	  
 	  driver.get("https://www.flipkart.com/");
 	  Thread.sleep(3000);
@@ -82,7 +82,7 @@ public class gettitleurltext {
   }
   @BeforeTest
   public void beforeTest() {
-	  driver= new EdgeDriver();
+	  driver= new ChromeDriver();
 	  driver.manage().window().maximize();
   }
 

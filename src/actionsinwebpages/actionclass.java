@@ -13,13 +13,10 @@ import org.testng.annotations.Test;
 public class actionclass {
 	WebDriver driver;
 	
-	
   @Test
   public void mousehovers() throws Exception{
 	  driver.get("https://www.flipkart.com/");
-	  Thread.sleep(3000);
-	  driver.findElement(By.xpath("/html/body/div[5]/div/span")).click();
-	  Thread.sleep(2000);
+	  driver.findElement(By.xpath("/html/body/div[5]/div/span")).click();	 
 	  Actions act=new Actions(driver);
 	  act.moveToElement(driver.findElement(By.xpath("//span[normalize-space()='Login']"))).perform();
 	  Thread.sleep(3000);
@@ -37,9 +34,7 @@ public class actionclass {
 	  act.sendKeys(Keys.ENTER).perform();
 	  Thread.sleep(2000);
 	  act.contextClick(driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[3]/div[1]/div[2]/div[2]/div/div/div/a/div[1]/div[1]/div/div/img"))).build().perform();
-	  //i want to copy a image of that phone.
-	  
-  }
+	  }
   
   
   
